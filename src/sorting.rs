@@ -3,6 +3,9 @@ pub fn bakctracking_sort<T: Into<f64> + Copy>(vec: &Vec<T>) -> Vec<T> {
     while !sorting_algorithm(&mut vec, 0, 1) {}
     vec
 }
+pub fn bakctracking_sort_inplace<T: Into<f64> + Copy>(vec: &mut Vec<T>) {
+    while !sorting_algorithm(vec, 0, 1) {}
+}
 
 fn sorting_algorithm<T: Into<f64> + Copy>(
     vector: &mut Vec<T>,
