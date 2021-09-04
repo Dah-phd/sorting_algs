@@ -9,6 +9,8 @@ fn main() {
     let sorted_by_rec = sorting::recursive_sort(&vec);
     println!("{:?}", sorted_by_rec);
     println!("Original: {:?}", vec);
+    let mut test_vec = vec![3, 2, 1, 2];
+    test_vec[6] = 3;
     // println!("Using backtracking sort inplace:");
     // sorting::bakctracking_sort_inplace(&mut vec);
     // println!("Original: {:?}", vec);
